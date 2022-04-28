@@ -1,0 +1,281 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:tomato;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+/* center aline */
+.centre {
+				text-align:center;
+				width:100;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+/* text size */
+ 	h20 { 
+   	font-size: 70px;
+ 	}
+ h15{
+  	font-size: 50px;
+  text-align: center;
+  margin-top: 0rem;
+  }
+h14 {
+  font-size: 40px;
+ }
+h19 {
+  	font-size: 125px;
+ }
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+  display: flex;
+  
+  
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:1750px;
+  background:url('./images/bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:50px;
+}
+#halloween {
+    height:1750px;
+    width: 980px;
+  background:url('./images/Tree.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+  margin-top: 0%;
+}
+.frame h1 {
+    color: orangered;
+    font-size: 100px;
+}
+#bg {
+  height:1750px;
+  width: 980px;
+  background:url('./images/Hacker.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+  margin: auto;
+  
+    
+}
+.darked h20{
+  padding:30px;
+  /*  background:rgba(53,66,74);/*  */
+  color: red;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.about-me{
+    margin-top: 10rem;
+    text-align: right;
+    font-size: 60px;
+    color: orangered;
+    
+} 
+/* flip image */
+.mirror {
+   display: inline-block;
+   margin:0rem;
+   transform: rotatez(180deg); 
+   color:#1589FF;
+   font-size: 70px;
+   padding: 2rem;
+
+       
+}
+#bottom {
+    position: absolute;
+    bottom: 10rem;
+    left: 0%;
+    padding:10px;
+    margin-top: 20px;
+   }
+
+/*   */
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  
+  
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+  height:250px;
+}
+
+/*  footer{
+  padding:20px;
+  margin-top:20px;
+  color:#fffafa;
+  background-color:#35424a;
+  text-align: center;
+  
+} */
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding:20px;
+  margin-top:20px;
+  color:#fffafa;
+  background-color:#35424a;
+  text-align: center;
+  
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
