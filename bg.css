@@ -16,7 +16,7 @@ body{
     text-align:center;
     width:100;
 }
-.ring { position:absolute; 
+/* .ring { position:absolute; 
 
 top:50%; 
 
@@ -112,7 +112,7 @@ width:150px;
 
  @keyframes animate { 0% { transform:rotate(45deg); } 100% { transform:rotate(405deg); } }
 
-
+*/
 ul{
   margin:0;
   padding:0;
