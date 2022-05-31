@@ -72,7 +72,7 @@ width:150px;
 
   animation:animateC 2s linear infinite; }
 
-   span { display:block;
+   .load{ display:block;
 
     position:absolute; 
 
